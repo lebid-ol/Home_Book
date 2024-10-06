@@ -1,0 +1,14 @@
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.GeneratedMSBuildEditorConfig.editorconfig
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.AssemblyInfoInputs.cache
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.AssemblyInfo.cs
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.csproj.CoreCompileInputs.cache
+D:\Образование\Progects_C#\Home_Book\Home_Book\bin\Debug\net8.0\Home_Book.exe
+D:\Образование\Progects_C#\Home_Book\Home_Book\bin\Debug\net8.0\Home_Book.deps.json
+D:\Образование\Progects_C#\Home_Book\Home_Book\bin\Debug\net8.0\Home_Book.runtimeconfig.json
+D:\Образование\Progects_C#\Home_Book\Home_Book\bin\Debug\net8.0\Home_Book.dll
+D:\Образование\Progects_C#\Home_Book\Home_Book\bin\Debug\net8.0\Home_Book.pdb
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.dll
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\refint\Home_Book.dll
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.pdb
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.genruntimeconfig.cache
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\ref\Home_Book.dll
