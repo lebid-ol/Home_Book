@@ -12,3 +12,4 @@ D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\refin
 D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.pdb
 D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.genruntimeconfig.cache
 D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\ref\Home_Book.dll
+D:\Образование\Progects_C#\Home_Book\Home_Book\obj\Debug\net8.0\Home_Book.sourcelink.json

@@ -7,6 +7,7 @@ namespace Home_Book
     {
         static void Main(string[] args)
         {
+            bool fullInfo = true;
 
             //Задание первое
             Book bookTask1 = new Book();
@@ -55,18 +56,23 @@ namespace Home_Book
             Console.WriteLine("ЗАДАНИЕ ТРЕТЬЕ");
             Console.ResetColor();
 
-            EBookNew booknew = new EBookNew();
-            booknew.Title = "1984";
-            booknew.Author = "George Orwell";
-            booknew.Year = 1949;
-            booknew.ISBN = "978-0-452-28423-4";
+            EBookNew booknew = new EBookNew("1984", "George Orwell", 1949, "978-0-452-28423-4");
+            
+            EBookNew booknew1 = new EBookNew("The Master and Margarita", "Mikhail Bulgakov");
+           
+            
+            booknew.GetBookInfo(fullInfo);
+            booknew1.GetBookInfo();
+           
 
-            EBookNew booknew1 = new EBookNew();
-            booknew1.Title = "The Master and Margarita";
-            booknew1.Author = "Mikhail Bulgakov";
-
-            //booknew.GetBookInfo();
-            //booknew1.GetBookInfo();
+            //задание четвертое
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("ЗАДАНИЕ ЧЕТВЕРТОЕ");
+            Console.ResetColor();
+            EBookNew booknew3 = new EBookNew();
+            booknew3.UpdateBook();
+            booknew3.UpdateBook(author: "Joan", year : 1983);
+            
         }
         //Задание первое
         internal class Book
@@ -100,20 +106,68 @@ namespace Home_Book
             }
         }
 
-        //Задание третье: модифицируем класс EBook, создав наследуемый класс.
-        internal class EBookNew : EBook
+        //Задание третье
+        internal class EBookNew
         {
-            //internal void GetBookInfo(bool fullInfo)
-            //{
-            //    if (fullInfo)
-            //    {
-            //        Console.WriteLine($"Название книги: {Title}, Автор: {Author}, Год: {Year}, ISBN: {ISBN}");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine($"Название книги: {Title}, Автор: {Author}");
-            //    }
-            //}
+            internal string Title { get; set; }
+            internal string Author { get; set; }
+            internal int Year { get; set; }
+            internal string ISBN { get; set; }
+
+
+            internal EBookNew() 
+            {
+                
+            }
+
+            internal EBookNew(string title, string author, int year, string isbn)
+            {
+                Title = title;
+                Author = author;
+                Year = year;
+                ISBN = isbn;
+            }
+
+            internal EBookNew(string title, string author)
+            {
+                Title = title;
+                Author = author;
+            }
+
+           
+            internal void GetBookInfo(bool fullInfo)
+            {
+                Console.WriteLine($"Название книги: {Title}, Автор: {Author}, Год: {Year}, ISBN: {ISBN}");
+            }
+        
+
+            internal void GetBookInfo()
+            {
+                Console.WriteLine($"Название книги: {Title}, Автор: {Author}");
+            }
+
+            //Задание четвертое
+            internal void UpdateBook(string title = null, string author = null, int year = 0, string isbn = null)
+            {
+                if (title != null)
+                {
+                    Title = title;
+                }
+                if (author != null)
+                {
+                    Author = author;
+                }
+                if (year != 0)
+                {
+                    Year = year;
+                }
+                if (isbn != null)
+                {
+                    ISBN = isbn;
+                }
+
+                Console.WriteLine($"Название книги: {Title}, Автор: {Author}, Год: {Year}, ISBN: {ISBN}");
+            }
 
         }
     }
